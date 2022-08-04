@@ -1,0 +1,41 @@
+@import "vars";
+
+body {
+  font-size: 16px;
+  line-height: 1.37;
+  font-family: Display, sans-serif;
+  color: $white;
+  overflow-x: hidden;
+}
+
+.wrapper-container-header {
+  width: 100%;
+  max-width: 896px;
+  padding: 0 $gap;
+  position: relative;
+  height: inherit;
+}
+
+.wrapper-container {
+  width: 100%;
+  max-width: 896px;
+  padding: 0 0 0 50px;
+  position: relative;
+  height: inherit;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+}
+
+.subtitle {
+  font-size: 15px;
+  line-height: 1.3;
+  opacity: 0.8;
+}
+
+.section {
+  height: 667px;
+}

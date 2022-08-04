@@ -1,0 +1,8 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="arrow-down" viewBox="0 0 56 32">
+            <path fill="#fff" style="fill:var(--color1, #fff)" opacity=".8"
+                  d="M28 26 52.176 2.648c.412-.391.97-.631 1.584-.631s1.172.24 1.585.632l-.001-.001c.405.383.657.924.657 1.524s-.252 1.141-.656 1.523l-.001.001L28 32 .656 5.696c-.405-.383-.657-.924-.657-1.524s.252-1.141.656-1.523l.001-.001c.412-.391.97-.631 1.584-.631s1.172.24 1.585.632l-.001-.001L28 26z"/>
+        </symbol>
+    </defs>
+</svg>

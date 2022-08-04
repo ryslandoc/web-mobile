@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web-mobile</title>
+    <!-- Link styles -->
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-top">
+        <div class="wrapper-container-header">
+            <div class="menu-burger" aria-controls="nav" aria-expanded="false"
+                 aria-label="Відкрити меню">
+                <span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link">Головна</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link">Проєкти</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Main -->
+<main id="root">
+    <!-- Section video-banner -->
+    <section class="section section-video-banner">
+        <div class="wrapper-container ">
+            <div class="wrapper-video-banner">
+                <div class="video-banner-text-box">
+                    <h2 class="video-banner-title">
+                        Дивіться ТБ та кіно без реклами в єдиній передплаті
+                    </h2>
+                    <p class="video-banner-subtitle">
+                        Популярні телеканали та величезна бібліотека фільмів, серіалів, мультфільмів, трансляцій у
+                        єдиній
+                        передплаті.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <svg class="video-banner-icon">
+            <use href="./images/sprite.svg#arrow-down"></use>
+        </svg>
+    </section>
+
+    <!-- Section watch-films -->
+    <section class="section section-watch-films">
+        <div class="wrapper-container">
+            <div class="wrapper-watch-films">
+                <h2 class="title">
+                    Дивіться фільми без інтернету
+                </h2>
+                <p class="subtitle">
+                    Завантаження фільмів та серіалів на ваш пристрій.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section prepayment -->
+    <section class="section section-prepayment">
+        <div class="prepayment">
+            <div class="wrapper-container">
+                <div class="wrapper-prepayment">
+                    <div class="prepayment-top-content">
+                        <p class="prepayment-top-subtitle">Передплата</p>
+                        <h2 class="prepayment-top-title">Оптимальна</h2>
+                    </div>
+                    <div class="prepayment-center-content">
+                        <h1 class="prepayment-center-title">
+                            10000 фільмів та 160+ каналів
+                        </h1>
+                        <p class="prepayment-center-subtitle">
+                            Голлівудська класика та свіжі кіно-новинки за підпискою, прямі футбольні трансляції та понад
+                            160 каналів
+                        </p>
+                    </div>
+                    <div class="prepayment-bottom-content">
+                        <h2 class="prepayment-bottom-price">від 1 ГРН</h2>
+                        <button class="prepayment-bottom-button">Спробувати</button>
+                        <p class="prepayment-bottom-text">
+                            Перші 14 днів за 1 грн, далі – 97 грн/міс.
+                        </p>
+                        <a href="javascript:void(0)" class="prepayment-bottom-link">
+                            Детальніше
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section gifts -->
+    <section class="section section-gifts">
+        <div class="gifts">
+            <div class="wrapper-container">
+                <div class="wrapper-gifts">
+                    <h2 class="title">
+                        Подарунки від партнерів при кожному продовженні передплати
+                    </h2>
+                    <p class="subtitle">
+                        Сертифікати на знижки від WOG, Сушія, Антошка, Єва та ін.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section connect -->
+    <section class="section section-connect">
+        <div class="wrapper-container">
+            <div class="wrapper-connect">
+                <h2 class="title">Підключіть передплату за 1 грн та отримуйте:</h2>
+                <ul class="connect-text-list">
+                    <li class="connect-text-item">
+                        <h3>ТВ-архів</h3>
+                        <p>телепередач до 14 днів</p>
+                    </li>
+                    <li class="connect-text-item">
+                        <h3>Full HD</h3>
+                        <p>якість тільки за передплатою</p>
+                    </li>
+                    <li class="connect-text-item">
+                        <h3>10% знижка</h3>
+                        <p>на прем'єри</p>
+                    </li>
+                    <li class="connect-text-item">
+                        <h3>5 пристроїв</h3>
+                        <p>в одній передплаті</p>
+                    </li>
+                    <li class="connect-text-item">
+                        <h3>Без реклами</h3>
+                        <p>на всіх фільмах та мультфільмах</p>
+                    </li>
+                </ul>
+                <button class="connect-button">
+                    Підключити
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- Scrollify Query plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+        integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(function () {
+        $.scrollify({
+            section: ".section",
+        });
+    });
+</script>
+<script src="./js/index.js"></script>
+</body>
+</html>

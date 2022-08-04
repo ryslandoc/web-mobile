@@ -1,0 +1,367 @@
+@import "reset";
+@import "global";
+@import "vars";
+
+body.js-open-menu-body {
+  overflow: hidden;
+}
+
+/* ===== Header ===== */
+.header {
+  z-index: 8;
+}
+
+.header-top {
+  height: 46px;
+  padding: 15px 0;
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+
+.menu-burger {
+  position: relative;
+  width: 16px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+
+  &.js-active-burger {
+
+    &:before {
+      transform: rotate(45deg);
+      bottom: 4px;
+      width: 100%;
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+      top: 6px;
+      width: 100%;
+    }
+
+    span {
+      transform: scale(0);
+    }
+  }
+
+  span {
+    background-color: $white;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    transition: all 0.5s ease 0s;
+  }
+
+  &:before, &:after {
+    content: '';
+    background-color: $white;
+    position: absolute;
+    width: 100%;
+    border-radius: 2px;
+    height: 2px;
+    transition: all 0.5s ease 0s;
+  }
+
+  &:after {
+    top: 0;
+    left: 0;
+  }
+
+  &:before {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 40px;
+  margin: 0 auto;
+  z-index: 9;
+  background-color: $black;
+
+  @media (min-width: 600px) {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  &.js-menu-opened {
+    display: block;
+    top: -16px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .menu-list {
+    padding-top: 100px;
+
+    @media (min-width: 600px) {
+      padding-top: 0;
+    }
+
+    .menu-item {
+      display: block;
+      text-align: center;
+      padding: 10px;
+
+      @media (min-width: 600px) {
+        display: inline-block;
+        padding: 0;
+      }
+
+      .menu-link {
+        color: $white;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    .menu-item + .menu-item {
+      @media (min-width: 600px) {
+        margin-left: 33px;
+      }
+    }
+  }
+}
+
+
+/* ===== Section video banner ===== */
+.section-video-banner {
+  background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url('../images/tv-bg-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 596px;
+  width: 100%;
+  position: relative;
+  background-color: $background-color;
+}
+
+.wrapper-video-banner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.video-banner-text-box {
+  width: 92%;
+
+  .video-banner-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    color: $white;
+    margin-bottom: 10px;
+  }
+
+  .video-banner-subtitle {
+    color: $white;
+    opacity: 0.8;
+  }
+}
+
+.video-banner-icon {
+  position: absolute;
+  width: 14px;
+  height: 7.5px;
+  left: 50%;
+  right: 0;
+  bottom: 25px;
+}
+
+/* Section watch films */
+.section-watch-films {
+  background-image: url('../images/film-bg-img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $background-color;
+}
+
+.wrapper-watch-films {
+  padding-top: 80px;
+
+  .title {
+    margin-bottom: 15px;
+    width: 74%;
+  }
+
+  .subtitle {
+    width: 71%;
+  }
+}
+
+/* ===== Section prepayment ===== */
+.section-prepayment {
+  background-color: $button-color-bg;
+  padding: 8px;
+
+  .prepayment {
+    background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url('../images/prepayment-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+}
+
+.wrapper-prepayment {
+  .prepayment-top-content {
+    padding-top: 36px;
+
+    .prepayment-top-subtitle {
+      letter-spacing: 0.5px;
+    }
+
+    .prepayment-top-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      margin-top: 5px;
+    }
+  }
+
+  .prepayment-center-content {
+    padding-top: 109px;
+
+    .prepayment-center-title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.19;
+      width: 90.5%;
+    }
+
+    .prepayment-center-subtitle {
+      letter-spacing: 0.5px;
+      margin-top: 10px;
+      width: 84%;
+    }
+  }
+
+  .prepayment-bottom-content {
+    padding-top: 40px;
+
+    .prepayment-bottom-price {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.25;
+      letter-spacing: 1px;
+      text-transform: lowercase;
+      margin-bottom: 16px;
+    }
+
+    .prepayment-bottom-button {
+      background-color: $button-color-bg;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.18;
+      text-align: center;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      padding: 21px 57px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      color: $white;
+    }
+
+    .prepayment-bottom-text {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.833333px;
+      text-transform: capitalize;
+      color: $decoration-color;
+      max-width: 157px;
+      margin-bottom: 20px;
+    }
+
+    .prepayment-bottom-link {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.18;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      color: $link-color;
+    }
+  }
+}
+
+
+/* ===== Section gifts ===== */
+.section-gifts {
+  background-image: url('../images/gifts-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: $background-color;
+  height: 571px;
+}
+
+.gifts {
+  .wrapper-gifts {
+    padding-top: 92px;
+    width: 95%;
+
+    .title {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/* ===== Section connect ===== */
+.section-connect {
+  background-color: $background-color;
+
+  .wrapper-connect {
+    padding-top: 90px;
+
+    .title {
+      margin-bottom: 30px;
+      width: 94%;
+    }
+
+    .connect-text-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+
+      .connect-text-item {
+        margin-bottom: 40px;
+
+        p {
+          width: 133px;
+        }
+      }
+
+      .connect-text-item + .connect-text-item {
+        margin-right: 15px;
+      }
+    }
+
+    .connect-button {
+      background-color: $button-color-bg;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 1.2;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      color: $white;
+      border-radius: 5px;
+      padding: 20px 49px;
+    }
+  }
+}
